@@ -1,116 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mayank Dantre - IT Professional</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
-        .profile-img { transition: transform 0.3s ease; }
-        .profile-img:hover { transform: scale(1.05); }
-        .skill-badge { transition: all 0.3s ease; }
-        .skill-badge:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
-        .project-card { transition: all 0.3s ease; }
-        .project-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
-        .social-icon { transition: all 0.3s ease; }
-        .social-icon:hover { transform: scale(1.2); color: #3b82f6; }
-        @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr !important; } }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mayank Dantre - IT Professional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    .profile-img { transition: transform 0.3s ease; }
+    .profile-img:hover { transform: scale(1.05); }
+    .skill-badge { transition: all 0.3s ease; }
+    .skill-badge:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+    .project-card { transition: all 0.3s ease; }
+    .project-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+    .social-icon { transition: all 0.3s ease; }
+    .social-icon:hover { transform: scale(1.2); color: #3b82f6; }
+    @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr !important; } }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header -->
-    <header class="bg-white shadow-sm py-8">
-        <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center">
-            <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-100 shadow-md mb-6 md:mb-0 md:mr-8 profile-img">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=774&q=80" alt="Mayank Dantre" class="w-full h-full object-cover">
-            </div>
-            <div class="text-center md:text-left">
-                <h1 class="text-3xl md:text-4xl font-bold text-blue-800 mb-2">MAYANK DANTRE</h1>
-                <p class="text-lg text-blue-600">B.Tech IT Student | MITAOE</p>
-                <p class="mt-3 italic text-gray-600">"Turning ideas into reality through code and creativity."</p>
-            </div>
+<!-- Header -->
+<header class="bg-white shadow-sm py-8">
+  <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center">
+    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-100 shadow-md mb-6 md:mb-0 md:mr-8 profile-img">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=774&q=80" alt="Mayank Dantre" class="w-full h-full object-cover"/>
+    </div>
+    <div class="text-center md:text-left">
+      <h1 class="text-3xl md:text-4xl font-bold text-blue-800 mb-2">MAYANK DANTRE</h1>
+      <p class="text-lg text-blue-600">B.Tech IT Student | MITAOE</p>
+      <p class="mt-3 italic text-gray-600">"Turning ideas into reality through code and creativity."</p>
+    </div>
+  </div>
+</header>
+
+<!-- Main -->
+<main class="container mx-auto px-4 md:px-6 py-12">
+
+  <!-- About Me -->
+  <section id="about" class="mb-16">
+    <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 pb-2 border-b-2 border-blue-100">About Me</h2>
+    <div class="grid about-grid grid-cols-2 gap-8">
+      <p>
+        I am a passionate IT student with a keen interest in problem-solving and technology-driven solutions. My focus areas include software development, machine learning, and optimization models. I enjoy transforming complex challenges into simple, effective solutions while continuously learning and growing my skills.
+      </p>
+      <p>
+        Outside of academics, I work on projects that combine creativity with technical expertise — from data-driven models to interactive games. My goal is to contribute to impactful projects that make a positive difference.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="mb-16">
+    <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 pb-2 border-b-2 border-blue-100">Skills</h2>
+    <div class="flex flex-wrap gap-3">
+      <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Python</span>
+      <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Java</span>
+      <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">C++</span>
+      <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Machine Learning</span>
+      <span class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Data Analysis</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="mb-16">
+    <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 pb-2 border-b-2 border-blue-100">Projects</h2>
+    <div class="flex flex-col gap-6">
+      
+      <!-- Sentiment Analysis -->
+      <div class="bg-white p-6 rounded-lg shadow-md project-card border-4 border-yellow-400">
+        <img src="YOUR_SENTIMENT_IMAGE.jpg" alt="Sentiment Analysis Screenshot" class="w-full h-40 object-cover rounded mb-4"/>
+        <div class="h-40 bg-yellow-100 rounded-lg mb-4 flex items-center justify-center">
+          <i class="fas fa-chart-line text-yellow-500 text-5xl"></i>
         </div>
-    </header>
+        <h3 class="text-xl font-semibold text-yellow-700 mb-2">Sentiment Analysis Application</h3>
+        <p class="text-gray-700">
+          Developed a sentiment classification tool using advanced NLP techniques and Python. Includes preprocessing, model training, and visualization dashboards.
+        </p>
+        <p class="mt-4">
+          <a href="https://may-day-419.github.io/EMOTION.TRACKER/" target="_blank" rel="noopener noreferrer" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">View Project</a>
+        </p>
+      </div>
 
-    <!-- Main -->
-    <main class="container mx-auto px-4 md:px-6 py-12">
+      <!-- Parking Model -->
+      <div class="bg-white p-6 rounded-lg shadow-md project-card border-4 border-orange-400">
+        <img src="YOUR_PARKING_IMAGE.jpg" alt="Parking Model Screenshot" class="w-full h-40 object-cover rounded mb-4"/>
+        <div class="h-40 bg-orange-100 rounded-lg mb-4 flex items-center justify-center">
+          <i class="fas fa-parking text-orange-500 text-5xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-orange-700 mb-2">College Parking Optimization Model</h3>
+        <p class="text-gray-700">
+          Developed and implemented an optimized parking management model leveraging data-driven forecasting and spatial allocation strategies to maximize capacity utilization.
+        </p>
+        <p class="mt-4">
+          <a href="https://drive.google.com/drive/folders/1hNmvRsntLaVq5d3CO8nGT78cIZgMhP4q?usp=sharing" target="_blank" rel="noopener noreferrer" class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">View Project</a>
+        </p>
+      </div>
 
-        <!-- Projects -->
-        <section id="projects" class="mb-16">
-            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 pb-2 border-b-2 border-blue-100">Projects</h2>
-            <div class="flex flex-col gap-6">
-                
-                <!-- Sentiment Analysis -->
-                <div class="bg-white p-6 rounded-lg shadow-md project-card border-4 border-yellow-400">
-                    <img src="YOUR_SENTIMENT_IMAGE.jpg" alt="Sentiment Analysis Screenshot" class="w-full h-40 object-cover rounded mb-4">
-                    <div class="h-40 bg-yellow-100 rounded-lg mb-4 flex items-center justify-center">
-                        <i class="fas fa-chart-line text-yellow-500 text-5xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-yellow-700 mb-2">Sentiment Analysis Application</h3>
-                    <p class="text-gray-700">
-                        Developed a sentiment classification tool using advanced NLP techniques and Python.
-                        Includes preprocessing, model training, and visualization dashboards.
-                        A detailed project report is available upon request.
-                    </p>
-                    <p class="mt-4">
-                        <a href="https://may-day-419.github.io/EMOTION.TRACKER/" target="_blank" rel="noopener noreferrer" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">
-                          View Project
-                        </a>
-                    </p>
-                </div>
+      <!-- Snake Game -->
+      <div class="bg-white p-6 rounded-lg shadow-md project-card border-4 border-green-400">
+        <img src="YOUR_SNAKE_IMAGE.jpg" alt="Snake Game Screenshot" class="w-full h-40 object-cover rounded mb-4"/>
+        <div class="h-40 bg-green-100 rounded-lg mb-4 flex items-center justify-center">
+          <i class="fas fa-gamepad text-green-500 text-5xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-green-700 mb-2">Snake Game in Python</h3>
+        <p class="text-gray-700">
+          Created a retro-style snake game with multiple difficulty levels, score tracking, and smooth animations using Python's `pygame` library.
+        </p>
+      </div>
 
-                <!-- Parking Optimization Model -->
-                <div class="bg-white p-6 rounded-lg shadow-md project-card border-4 border-orange-400">
-                    <img src="YOUR_PARKING_IMAGE.jpg" alt="Parking Model Screenshot" class="w-full h-40 object-cover rounded mb-4">
-                    <div class="h-40 bg-orange-100 rounded-lg mb-4 flex items-center justify-center">
-                        <i class="fas fa-parking text-orange-500 text-5xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-orange-700 mb-2">College Parking Optimization Model</h3>
-                    <p class="text-gray-700">
-                        Developed and implemented an optimized parking management model leveraging data-driven forecasting and spatial allocation strategies to maximize capacity utilization, reduce congestion, and improve user experience.
-                    </p>
-                    <p class="mt-4">
-                        <a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">
-                          View Project
-                        </a>
-                    </p>
-                </div>
+    </div>
+  </section>
 
-                <!-- Snake Game -->
-                <div class="bg-white p-6 rounded-lg shadow-md project-card border-4 border-green-400">
-                    <img src="YOUR_SNAKE_IMAGE.jpg" alt="Snake Game Screenshot" class="w-full h-40 object-cover rounded mb-4">
-                    <div class="h-40 bg-green-100 rounded-lg mb-4 flex items-center justify-center">
-                        <i class="fas fa-gamepad text-green-500 text-5xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-green-700 mb-2">Snake Game in Python</h3>
-                    <p class="text-gray-700">
-                        Created a retro-style snake game with multiple difficulty levels, score tracking,
-                        and smooth animations using Python's `pygame` library.
-                    </p>
-                </div>
-            </div>
-            <p class="mt-6 text-gray-600 italic">
-                I have also worked on several unofficial projects that cannot be publicly shared due to privacy agreements.
-                However, I am happy to discuss them in person.
-            </p>
-        </section>
-    </main>
+  <!-- Education -->
+  <section id="education" class="mb-16">
+    <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 pb-2 border-b-2 border-blue-100">Education</h2>
+    <ul class="list-disc list-inside text-gray-700">
+      <li>B.Tech in Information Technology - MIT Academy of Engineering</li>
+      <li>Completed courses in Machine Learning, Data Structures, and Algorithms</li>
+    </ul>
+  </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Resume Loaded Successfully!');
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-                });
-            });
-        });
-    </script>
+  <!-- Contact -->
+  <section id="contact" class="mb-16">
+    <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 pb-2 border-b-2 border-blue-100">Contact</h2>
+    <p>Email: <a href="mailto:mayank@example.com" class="text-blue-600 hover:underline">mayank@example.com</a></p>
+    <div class="flex space-x-4 mt-4">
+      <a href="#" class="social-icon"><i class="fab fa-linkedin text-2xl"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-github text-2xl"></i></a>
+    </div>
+  </section>
+
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('Resume Loaded Successfully!');
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+});
+</script>
 
 </body>
 </html>
