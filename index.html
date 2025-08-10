@@ -1,213 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mayank Dantre - IT Professional</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
-        .profile-img { transition: transform 0.3s ease; }
-        .profile-img:hover { transform: scale(1.05); }
-        .skill-badge { transition: all 0.3s ease; }
-        .skill-badge:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
-        .project-card { transition: all 0.3s ease; }
-        .project-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
-        .social-icon { transition: all 0.3s ease; }
-        .social-icon:hover { transform: scale(1.2); color: #3b82f6; }
-        @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr !important; } }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayank Dantre – AI Developer & Programmer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-100 text-gray-800">
+  
+  <!-- Header -->
+  <header class="bg-blue-600 text-white text-center py-8">
+    <img src="profile.jpg" alt="Mayank Dantre" class="mx-auto w-32 h-32 rounded-full border-4 border-white shadow-lg">
+    <h1 class="text-3xl font-bold mt-4">Mayank Dantre</h1>
+    <p class="text-lg">AI Developer & Programmer</p>
+    <p class="italic text-sm mt-2">"Turning coffee into code and ideas into AI-powered solutions."</p>
+  </header>
 
-    <!-- Header -->
-    <header class="bg-white shadow-sm py-8">
-        <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center">
-            <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-blue-100 shadow-md mb-6 md:mb-0 md:mr-8 profile-img">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=774&q=80" alt="Mayank Dantre" class="w-full h-full object-cover">
-            </div>
-            <div class="text-center md:text-left">
-                <h1 class="text-3xl md:text-4xl font-bold text-blue-800 mb-2">MAYANK DANTRE</h1>
-                <p class="text-lg text-blue-600">B.Tech IT Student | MITAOE</p>
-                <p class="mt-3 italic text-gray-600">"Turning ideas into reality through code and creativity."</p>
-            </div>
-        </div>
-    </header>
+  <!-- About Me -->
+  <section id="about" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">About Me</h2>
+      <p>
+        Passionate AI Developer with expertise in multiple programming languages and AI applications.  
+        Skilled in problem-solving, building scalable solutions, and working with cutting-edge technologies.  
+        Languages: English, Hindi, Japanese (N5 Level)
+      </p>
+    </div>
+  </section>
 
-    <!-- Main -->
-    <main class="container mx-auto px-4 md:px-6 py-12">
+  <!-- Skills -->
+  <section id="skills" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-8">Technical Skills</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Proficient in Python, JavaScript, C++, Java, HTML, CSS</li>
+        <li>AI & Machine Learning frameworks (TensorFlow, PyTorch, OpenCV)</li>
+        <li>Data Analysis & Visualization</li>
+        <li>Web Development (React, Node.js, Express)</li>
+        <li>API Development & Integration</li>
+      </ul>
+    </div>
+  </section>
 
-        <!-- About -->
-        <section id="about" class="mb-16">
-            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 pb-2 border-b-2 border-blue-100">About Me</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 about-grid">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-blue-700 mb-4">Personal Details</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start"><i class="fas fa-user text-blue-500 mt-1 mr-3"></i><span>Mayank Dantre</span></li>
-                        <li class="flex items-start"><i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-3"></i><span>Pune, India</span></li>
-                        <li class="flex items-start"><i class="fas fa-language text-blue-500 mt-1 mr-3"></i><span>Hindi, English, Marathi, Japanese (N5)</span></li>
-                        <li class="flex items-start"><i class="fas fa-envelope text-blue-500 mt-1 mr-3"></i><span>mayankdantre16@gmail.com</span></li>
-                        <li class="flex items-start"><i class="fas fa-phone text-blue-500 mt-1 mr-3"></i><span>+91 93220 87357</span></li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-blue-700 mb-4">Bio</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        I'm a passionate IT student who enjoys exploring technology, building projects, and solving real-world problems.
-                        I work well in a team, enjoy challenges, and communicate effectively in Hindi, English, Marathi, and Japanese.
-                        I love adventure, generating ideas, and bringing them to life with technology.
-                    </p>
-                </div>
-            </div>
-        </section>
+  <!-- Projects -->
+  <section id="projects" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">Projects</h2>
 
-        <!-- Skills -->
-        <section id="skills" class="mb-16">
-            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 pb-2 border-b-2 border-blue-100">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-blue-700 mb-4">Technical Skills</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full font-medium skill-badge"><i class="fas fa-brain mr-2"></i> AI & Machine Learning Applications</span>
-                        <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full font-medium skill-badge"><i class="fas fa-robot mr-2"></i> Deep Learning & NLP</span>
-                        <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full font-medium skill-badge"><i class="fas fa-code mr-2"></i> C / C++ / Java / Python </span>
-                        <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full font-medium skill-badge"><i class="fas fa-database mr-2"></i> SQL Databases</span>
-                        <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full font-medium skill-badge"><i class="fab fa-html5 mr-2"></i> HTML & CSS</span>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-blue-700 mb-4">Life Skills</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i>Leadership</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i>Fluent Communication</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i>Problem Solving</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i>Creativity</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i>Teamwork</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-3"></i>Adaptability</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <!-- Sentiment Analysis - Highlighted -->
+      <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">
+          <i class="fas fa-comments text-blue-500"></i> Sentiment Analysis
+        </h3>
+        <p class="mb-4">An AI-based tool for analyzing emotions in text using advanced NLP techniques.</p>
+        <a href="https://may-day-419.github.io/EMOTION.TRACKER/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">View Project</a>
+      </div>
 
-        <!-- Projects -->
-        <section id="projects" class="mb-16">
-            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 pb-2 border-b-2 border-blue-100">Projects</h2>
-            <div class="flex flex-col gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md project-card border-4 border-blue-500">
-                    <div class="h-40 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
-                        <i class="fas fa-chart-line text-blue-500 text-5xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Sentiment Analysis Application</h3>
-                    <p class="text-gray-700">
-                        Developed a sentiment classification tool using advanced NLP techniques and Python.
-                        Includes preprocessing, model training, and visualization dashboards.
-                        A detailed project report is available upon request.
-                    </p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md project-card">
-                    <div class="h-40 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
-                        <i class="fas fa-gamepad text-blue-500 text-5xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Snake Game in Python</h3>
-                    <p class="text-gray-700">
-                        Created a retro-style snake game with multiple difficulty levels, score tracking,
-                        and smooth animations using Python's `pygame` library.
-                    </p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md project-card">
-                    <div class="h-40 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
-                        <i class="fas fa-parking text-blue-500 text-5xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-blue-700 mb-2">College Parking Optimization Model</h3>
-                    <p class="text-gray-700">
-                        Developed and implemented an optimized parking management model leveraging data-driven forecasting and spatial allocation strategies to maximize capacity utilization, reduce congestion, and improve user experience.
-                    </p>
-                </div>
-            </div>
-            <p class="mt-6 text-gray-600 italic">
-                I have also worked on several unofficial projects that cannot be publicly shared due to privacy agreements.
-                However, I am happy to discuss them in person.
-            </p>
-        </section>
+      <!-- Portfolio Website -->
+      <div class="p-6 mb-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">
+          <i class="fas fa-laptop-code text-blue-500"></i> Portfolio Website
+        </h3>
+        <p class="mb-4">A responsive portfolio website showcasing my skills, projects, and experience.</p>
+      </div>
 
-        <!-- Education -->
-        <section id="education" class="mb-16">
-            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 pb-2 border-b-2 border-blue-100">Education</h2>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <ul class="space-y-6">
-                    <li class="border-b border-gray-100 pb-4">
-                        <h3 class="text-xl font-semibold text-blue-700">B.Tech in Information Technology</h3>
-                        <p class="text-gray-600">MITAOE, Second Year</p>
-                        <p class="text-gray-500 text-sm">2025 - Present</p>
-                    </li>
-                    <li class="border-b border-gray-100 pb-4">
-                        <h3 class="text-xl font-semibold text-blue-700">Higher Secondary Education (HSC)</h3>
-                        <p class="text-gray-600">Pune, Maharashtra</p>
-                        <p class="text-gray-500 text-sm">Graduated: 2024</p>
-                    </li>
-                    <li>
-                        <h3 class="text-xl font-semibold text-blue-700">Secondary School Education (SSC)</h3>
-                        <p class="text-gray-600">Pune, Maharashtra</p>
-                        <p class="text-gray-500 text-sm">Graduated: 2022</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <!-- Netflix Clone -->
+      <div class="p-6 mb-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">
+          <i class="fas fa-film text-blue-500"></i> Netflix Clone
+        </h3>
+        <p class="mb-4">A front-end replica of Netflix with dynamic content loading and responsive design.</p>
+      </div>
+    </div>
+  </section>
 
-        <!-- Certifications -->
-        <section id="certifications" class="mb-16">
-            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 pb-2 border-b-2 border-blue-100">Certifications</h2>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-3"></i>Python Essentials (Cisco)</div>
-                    <div class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-3"></i>SQL (GLA)</div>
-                    <div class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-3"></i>Networking Essentials (Cisco)</div>
-                    <div class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-3"></i>Career Readiness (Anudip Foundation)</div>
-                    <div class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-3"></i>MS-CIT (Maharashtra Govt)</div>
-                    <div class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-3"></i>IBM and Desgin Thinking </div>
-                    <div class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-3"></i>Google AI Essentials</div>
-                </div>
-            </div>
-        </section>
+  <!-- Education -->
+  <section id="education" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-8">Education</h2>
+      <ul class="space-y-4">
+        <li><strong>Higher Secondary Certificate (HSC)</strong> – XYZ College</li>
+        <li><strong>Secondary School Certificate (SSC)</strong> – ABC School</li>
+      </ul>
+    </div>
+  </section>
 
-        <!-- Contact -->
-        <section id="contact" class="mb-16">
-            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 pb-2 border-b-2 border-blue-100">Connect With Me</h2>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="flex justify-center space-x-6 md:space-x-10">
-                    <a href="https://github.com/sample" target="_blank" class="text-3xl text-gray-600 hover:text-blue-600 social-icon"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/sample" target="_blank" class="text-3xl text-gray-600 hover:text-blue-600 social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:mayankdantre16@gmail.com" class="text-3xl text-gray-600 hover:text-blue-600 social-icon"><i class="fas fa-envelope"></i></a>
-                    <a href="https://instagram.com/sample" target="_blank" class="text-3xl text-gray-600 hover:text-blue-600 social-icon"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </section>
-    </main>
+  <!-- Certifications -->
+  <section id="certifications" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-8">Certifications</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>AI & Machine Learning Fundamentals</li>
+        <li>Full Stack Web Development</li>
+      </ul>
+      <!-- Get All Certificates Button -->
+      <div class="mt-4">
+        <a href="https://drive.google.com/drive/folders/YOUR_CERTIFICATE_FOLDER_LINK" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          Get All Certificates
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-800 text-white py-8">
-        <div class="container mx-auto px-4 md:px-6 text-center">
-            <div class="mb-4">
-                <p>Email: mayankdantre16@gmail.com | Phone: +91 93220 87357 | Location: Pune, India</p>
-            </div>
-            <p class="text-blue-200">© 2025 Mayank Dantre. All rights reserved.</p>
-        </div>
-    </footer>
+  <!-- Contact -->
+  <section id="contact" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+      <div class="flex justify-center space-x-6">
+        <a href="https://github.com/MAY-DAY-419" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-blue-500 text-2xl"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mayank-dantre-1a021b25a" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-500 text-2xl"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:mayankdantre16@gmail.com" class="text-red-500 hover:text-red-700 text-2xl"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Resume Loaded Successfully!');
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-                });
-            });
-        });
-    </script>
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center py-4">
+    <p>&copy; 2025 Mayank Dantre. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
